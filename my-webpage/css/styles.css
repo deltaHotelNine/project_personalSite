@@ -1,0 +1,47 @@
+/* Nord Theme Colors */
+:root {
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+}
+
+body {
+    background-color: var(--nord0);
+    color: var(--nord4);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header {
+    font-size: 8px; /* Change this to the size you want */
+}
+
+/* Terminal-like interface */
+.terminal {
+    border: 1px solid var(--nord2);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
